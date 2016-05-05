@@ -1,6 +1,7 @@
 * {
     box-sizing: border-box;
 }
+
 body {
         background-image: url('media/backgroundtopmobile.jpg');
         background-repeat: no-repeat;
@@ -9,7 +10,7 @@ body {
 }
 
 .aboutme { 
-    top:100px;
+    top:200px;
     left:20px;
     width: 50%;
     float: left;
@@ -20,12 +21,13 @@ body {
     z-index:-100;
 }
 
-//*--SLIDE MENU--*//
+/*--SLIDE MENU--*/
 
 #container {
    display: flex;
    min-height: 50%;
 }
+
 input[type=checkbox] {
    position: absolute;
    opacity: 0;
@@ -98,6 +100,16 @@ input[type=checkbox]:checked ~ .slide-menu .menu li {
    box-shadow: rgba(8,8,8,.2) 3px 5px 5px;
 }
 
+.fs {
+    bottom: 0;
+    height: 4em;
+}
+
+.fs p {
+    bottom: 0;
+    height: 4em;
+}
+
 /*--TABLET-ONLY--not working--*/
 @media only screen and (min-width:415px) and (orientation : portrait){
 
@@ -162,28 +174,28 @@ body {
 }
 
 
-
-//*--DESKTOP-ONLY--not working--*//
+/*--DESKTOP-ONLY--not working--*/
 @media only screen and (min-width: 769px) {
-button {display: none;}
+    
+.mobile, #mobile {display: none;}
         
 body { 
-        background-image: url('media/backgroundtop.jpg') !imprtant; 
+        background-image: url('media/backgroundtop.jpg') !important; 
         background-repeat: no-repeat;
         background-size: cover;
         position:relative;
     }
-    
-     //*     *//
 
 #container {
    display: flex;
    min-height: 50%;
 }
+
 input[type=checkbox] {
    position: absolute;
    opacity: 0;
 }
+
 label {
    position: absolute;
    top: 30px;
